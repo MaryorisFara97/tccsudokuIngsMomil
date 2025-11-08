@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #f9f9f9, #c7d3e8);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #004aad;
+}
+
+.botones button {
+  background-color: #004aad;
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  font-size: 1.1rem;
+}
+
+.botones button:hover {
+  transform: scale(1.1);
+  background-color: #007bff;
+}
+
+#tablero {
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-template-rows: repeat(9, 50px);
+  justify-content: center;
+  gap: 2px;
+  margin: 20px auto;
+}
+
+.celda {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #444;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: white;
+  color: #333;
+}
+
+.celda[disabled] {
+  background-color: #e6e6e6;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.oculto {
+  display: none;
+}
+
+#cronometro, #errores {
+  font-size: 1.3rem;
+  color: #004aad;
+  margin-top: 10px;
+}
+
+.controles button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.controles button:hover {
+  background-color: #0056b3;
+}
